@@ -1,0 +1,7 @@
+<view>
+  <input type="text" placeholder="用户名" bindinput="handleUsernameInput" />
+  <input type="password" placeholder="密码" bindinput="handlePasswordInput" />
+  <button style="background-color: #4bca47; color: white; "
+          bindtap="handleLogin">登录</button>
+  <navigator url="/pages/register/register">注册</navigator>
+</view>
