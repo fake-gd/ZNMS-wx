@@ -1,0 +1,10 @@
+<view class="container">
+  <image class="background-image" src="/images/back.png" mode="aspectFill"></image>
+  <view class="content">
+    <text class="status">锁状态: {{lockStatus}}</text>
+    <button style="background-color: #7dcfff; color: white; "
+            bindtap="toggleLock">{{lockStatus === '开' ? '关闭锁' : '打开锁'}}</button>
+    <button style="background-color: #4bca47; color: white; "
+            bindtap="showRecords">查看开关记录</button>
+  </view>
+</view>
