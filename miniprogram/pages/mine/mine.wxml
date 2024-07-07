@@ -1,0 +1,20 @@
+<view class="container">
+  <image class="background-image" src="/images/back.png" mode="aspectFill"></image>
+  <view wx:if="{{isLoggedIn}}">
+    <text>用户名：{{user.username}}</text>
+    <view class="lock-info">
+      <text>智能锁密码：</text>
+      <text>{{lockCode}}</text> <!-- 显示智能锁代号 -->
+    </view>
+    <button style="background-color: #d14362; color: white; "
+            bindtap="handleLogout">退出登录</button>
+    <button style="background-color: #4bca47; color: white; "
+            bindtap="handleBindLock">修改密码</button>
+    <view wx:for="{{relativePhotos}}" wx:key="*this">
+      <image src="{{item}}" mode="aspectFit" style="width: 200px; height: 200px; margin: 10px 0;"></image>
+    </view>
+  </view>
+  <view wx:else>
+    <button bindtap="handleLogin">登录</button>
+  </view>
+</view>
