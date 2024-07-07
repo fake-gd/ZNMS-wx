@@ -1,0 +1,4 @@
+<view class="container">
+  <input placeholder="请输入密码" bindinput="onInputLockCode" />
+  <button bindtap="bindLock">确定</button>
+</view>
