@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/control/control",
+    "pages/records/records",
+    "pages/mine/mine",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/bindlock/bindlock"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/control/control",
+        "text": "控制",
+        "iconPath": "images/button1.png",
+        "selectedIconPath": "images/button1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/button2.png",
+        "selectedIconPath": "images/button2.png"
+      }
+    ]
+  }
+}
