@@ -1,0 +1,15 @@
+<!-- pages/records/records.wxml -->
+<view class="container">
+  <view class="header">
+    <button style="background-color: #4dd648; color: white; "
+            bindtap="goBack">返回</button>
+    <text class="title">开关记录</text>
+    <button style="background-color: #d8272a; color: white; "
+            bindtap="clearRecords">清空记录</button>
+  </view>
+  <scroll-view scroll-y="true" class="record-list">
+    <block wx:for="{{records}}" wx:key="index">
+      <text class="record">{{item}}</text>
+    </block>
+  </scroll-view>
+</view>
